@@ -1,3 +1,20 @@
+# App Stuffs
+Using:  
+- [React Native](https://facebook.github.io/react-native/)
+- [NativeBase](https://nativebase.io/)
+- [Expo](https://expo.io/)
+- [Yarn](https://yarnpkg.com/en/)
+
+## How to build the project
+1. Get Yarn
+2. Clone the repo to your system
+3. Get Expo on your phone
+4. run `yarn install` to isntall dependencies
+5. run `yarn start` to start the app
+6. scan the QR code with your Expo app
+
+# Auto-generated README.md (thanks `create-react-native-app`)
+
 This project was bootstrapped with [Create React Native App](https://github.com/react-community/create-react-native-app).
 
 Below you'll find information about performing common tasks. The most recent version of this guide is available [here](https://github.com/react-community/create-react-native-app/blob/master/react-native-scripts/template/README.md).
