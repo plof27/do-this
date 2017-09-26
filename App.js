@@ -1,6 +1,6 @@
 import React from 'react';
 import { Text, View } from 'react-native';
-import Styles from 'global-styles';
+import Styles from './global-styles';
 
 const App = () => (
   <View style={ Styles.container }>
