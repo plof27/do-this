@@ -18,9 +18,11 @@ class App extends React.Component {
         <Footer>
           <FooterTab>
             <Button vertical>
+              <Icon name="list" />
               <Text>List</Text>
             </Button>
             <Button vertical>
+              <Icon name="create" />
               <Text>New</Text>
             </Button>
             <Button vertical>
