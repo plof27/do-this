@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Container, Header, Left, Body, Right, Button, Icon, Title,Text } from 'native-base';
 import Styles from './global-styles';
 const App = () => (
   <Container>
-    <Header>
+    <Header style={ Styles.header }>
       <Left>
         <Button transparent>
           <Text>List</Text>
