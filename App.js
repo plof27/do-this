@@ -1,4 +1,5 @@
 import React from 'react';
+import { Container, Header, Content, Footer, FooterTab, Button, Text, Icon } from 'native-base';
 import { Font } from 'expo';
 
 class App extends React.Component {
@@ -23,6 +24,7 @@ class App extends React.Component {
               <Text>New</Text>
             </Button>
             <Button vertical>
+              <Icon name="cog" />
               <Text>Settings</Text>
             </Button>
           </FooterTab>
