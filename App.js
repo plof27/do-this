@@ -1,5 +1,6 @@
 import React from 'react';
-import { Container, Header, Content, Footer, FooterTab, Button, Text, Icon } from 'native-base';
+import { Container, Header, Content } from 'native-base';
+import AppFooter from './components/AppFooter';
 import { Font } from 'expo';
 
 class App extends React.Component {
@@ -15,22 +16,7 @@ class App extends React.Component {
       <Container>
         <Header />
         <Content />
-        <Footer>
-          <FooterTab>
-            <Button vertical>
-              <Icon name="list" />
-              <Text>List</Text>
-            </Button>
-            <Button vertical>
-              <Icon name="create" />
-              <Text>New</Text>
-            </Button>
-            <Button vertical>
-              <Icon name="cog" />
-              <Text>Settings</Text>
-            </Button>
-          </FooterTab>
-        </Footer>
+        <AppFooter />
       </Container>
     );
   }
