@@ -1,13 +1,24 @@
-import React from 'react';
-import { Text, View } from 'react-native';
+import React, { Component } from 'react';
+import { Container, Header, Left, Body, Right, Button, Icon, Title,Text } from 'native-base';
 import Styles from './global-styles';
-
 const App = () => (
-  <View style={ Styles.container }>
-    <Text>Open up App.js to start working on your app!</Text>
-    <Text>Changes you make will automatically reload.</Text>
-    <Text>Shake your phone to open the developer menu.</Text>
-  </View>
+  <Container>
+    <Header>
+      <Left>
+        <Button transparent>
+          <Text>List</Text>
+        </Button>
+      </Left>
+      <Body>
+        <Title>ANDOO LOOK</Title>
+      </Body>
+      <Right>
+        <Button transparent>
+          <Icon name="menu" />
+        </Button>
+      </Right>
+    </Header>
+  </Container>
 );
 
 export default App;
