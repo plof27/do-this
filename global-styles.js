@@ -10,8 +10,18 @@ const Styles = StyleSheet.create({
     justifyContent: 'center',
   },
   header: {
-    paddingTop: (Platform.OS === 'ios') ? 15 : 50,
-    paddingBottom: (Platform.OS === 'ios') ? 0 : 25,
+    paddingTop: (Platform.OS === 'ios') ? 15 : 48,
+    paddingBottom: (Platform.OS === 'ios') ? 0 : 27,
+  },
+  body: {
+    flex: 10,
+    alignItems: 'center',
+  },
+  left: {
+    flex: 4,
+  },
+  right: {
+    flex: 4,
   },
 });
 

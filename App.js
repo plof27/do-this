@@ -1,6 +1,5 @@
 import React from 'react';
-import { Container } from 'native-base';
-import { Content } from 'native-base';
+import { Container, Content } from 'native-base';
 import AppFooter from './components/AppFooter';
 import AppHeader from './components/AppHeader';
 import AppList from './components/AppList';
@@ -17,7 +16,9 @@ class App extends React.Component {
   render() {
     return(
       <Container>
-        <AppHeader />
+        <AppHeader
+          pageTitle="Super Title 64"
+        />
         <Content>
           <AppList />
         </Content>
