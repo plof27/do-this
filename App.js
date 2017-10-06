@@ -1,6 +1,8 @@
 import React from 'react';
-import { Container, Header, Content } from 'native-base';
+import { Container } from 'native-base';
+import { Content } from 'native-base';
 import AppFooter from './components/AppFooter';
+import AppHeader from './components/AppHeader';
 import { Font } from 'expo';
 
 class App extends React.Component {
@@ -14,7 +16,7 @@ class App extends React.Component {
   render() {
     return(
       <Container>
-        <Header />
+        <AppHeader />
         <Content />
         <AppFooter />
       </Container>
