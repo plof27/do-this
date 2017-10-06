@@ -1,13 +1,31 @@
 import React from 'react';
-import { Text, View } from 'react-native';
-import Styles from './global-styles';
+import { Container, Content } from 'native-base';
+import AppFooter from './components/AppFooter';
+import AppHeader from './components/AppHeader';
+import AppList from './components/AppList';
+import { Font } from 'expo';
 
-const App = () => (
-  <View style={ Styles.container }>
-    <Text>Open up App.js to start working on your app!</Text>
-    <Text>Changes you make will automatically reload.</Text>
-    <Text>Shake your phone to open the developer menu.</Text>
-  </View>
-);
+class App extends React.Component {
+  async componentWillMount() {
+    await Font.loadAsync({
+      'Roboto': require('native-base/Fonts/Roboto.ttf'),
+      'Roboto_medium': require('native-base/Fonts/Roboto_medium.ttf'),
+    });
+  }
+
+  render() {
+    return(
+      <Container>
+        <AppHeader
+          pageTitle="Super Title 64"
+        />
+        <Content>
+          <AppList />
+        </Content>
+        <AppFooter />
+      </Container>
+    );
+  }
+}
 
 export default App;
