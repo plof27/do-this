@@ -34,7 +34,9 @@ class App extends React.Component {
       <Container>
         <Header />
         <Content />
-        <AppFooter />
+        <AppFooter
+          onPress={ (name) => () => this.setState({ currentPage: name }) }
+        />
       </Container>
     );
   }
