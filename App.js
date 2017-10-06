@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Header, Content } from 'native-base';
 import AppFooter from './components/AppFooter';
+import Router from './containers/Router';
 import { Font, AppLoading } from 'expo';
 
 class App extends React.Component {
@@ -33,7 +34,11 @@ class App extends React.Component {
     return(
       <Container>
         <Header />
-        <Content />
+        <Content>
+          <Router
+            currentPage={ this.state.currentPage }
+          />
+        </Content>
         <AppFooter
           onPress={ (name) => () => this.setState({ currentPage: name }) }
         />
